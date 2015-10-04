@@ -30,24 +30,24 @@ exports.config  = {
                     path: 'vendor/hide-address-bar/hide-address-bar.js'
                 },
 
-                'le-home': {
-                    use: ['le-main', 'le-maps']
+                'MAC-home': {
+                    use: ['MAC-main', 'MAC-maps']
                 },
 
-                'le-main': {
+                'MAC-main': {
                     path    : 'js/main.js',
                     requires: ['node-base', 'hide-address-bar']
                 },
 
-                'le-maps': {
+                'MAC-maps': {
                     path    : 'js/maps.js',
                     requires: ['node-base', 'mapbox']
                 },
 
-                'le-rsvp': {
+                'MAC-rsvp': {
                     path    : 'js/rsvp.js',
                     requires: [
-                        'le-main',
+                        'MAC-main',
                         'app-base',
                         'app-content',
                         'app-transitions',
@@ -63,9 +63,9 @@ exports.config  = {
                     ]
                 },
 
-                'le-wedding': {
+                'MAC-wedding': {
                     path: 'js/wedding.js',
-                    requires: ['le-main', 'le-maps', 'event-resize', 'graphics']
+                    requires: ['MAC-main', 'MAC-maps', 'event-resize', 'graphics']
                 }
             }
         }

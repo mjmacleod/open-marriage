@@ -1,11 +1,11 @@
 {
-    "name"       : "leslie-eric.us",
-    "description": "The open source website for Leslie Verploegen's and Eric Ferraiuolo's wedding.",
-    "homepage"   : "http://leslie-eric.us/",
+    "name"       : "macleod.nom.za",
+    "description": "The open source website for Malcolm MacLeod and Corrie Gailey's wedding.",
+    "homepage"   : "http://macleod.nom.za/",
     "version"    : "1.8.0",
     "private"    : true,
 
-    "author": "Eric Ferraiuolo <eferraiuolo@gmail.com> (http://ericf.me/)",
+    "author": "Malcolm MacLeod <mmacleod@webmail.co.za>",
 
     "license": "MIT",
 

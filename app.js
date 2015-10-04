@@ -12,12 +12,12 @@ var combo   = require('combohandler'),
 
 // -- Configure ----------------------------------------------------------------
 
-app.set('name', 'Leslie-Eric Wedding');
+app.set('name', 'Corrie-Malcolm Wedding');
 app.set('env', config.env);
 app.set('port', config.port);
 app.set('views', config.dirs.views);
 app.set('view engine', 'hbs');
-app.set('state namespace', 'YUI.Env.LE');
+app.set('state namespace', 'YUI.Env.MAC');
 app.enable('strict routing');
 
 app.engine('hbs', exphbs({
@@ -33,8 +33,8 @@ app.engine('hbs', exphbs({
 app.expose(config.yui.config, 'window.YUI_config');
 
 app.locals({
-    title   : 'Leslie & Eric',
-    appTitle: 'L&E Wedding',
+    title   : 'Corrie & Malcolm',
+    appTitle: 'C&M Wedding',
 
     version    : config.version,
     yui_version: config.yui.version,
@@ -54,7 +54,7 @@ app.locals({
         ]
     },
 
-    yui_module: 'le-main',
+    yui_module: 'MAC-main',
 
     pictos : config.pictos,
     typekit: config.typekit,

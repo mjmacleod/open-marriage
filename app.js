@@ -131,4 +131,6 @@ app.get('/combo/:version', [
     combo.respond
 ]);
 
+app.add_url_rule('/favicon.ico', redirect_to=url_for('static', filename='favicon.ico'))
+
 module.exports = app;

@@ -2,6 +2,11 @@ body {
     padding-bottom: 0;
 }
 
+wedding-header
+{
+    width: 90%;
+}
+
 .ann-sep {
     font-size: 2.5em;
     color: #f2c63d;

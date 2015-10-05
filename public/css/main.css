@@ -192,7 +192,12 @@ a.is-button-negative {
     margin: 0;
     padding: 0;
     list-style: none;
+    background-image: url('img/mac_tartan.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    color: #471F5F;
 }
+
 .nav-item {
     margin: 0 1em 0 0;
     text-transform: uppercase;

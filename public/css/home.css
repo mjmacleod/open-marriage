@@ -2,9 +2,11 @@ body {
     padding-bottom: 0;
 }
 
-wedding-header
+.wedding-header
 {
     width: 90%;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .ann-sep {

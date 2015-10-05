@@ -72,7 +72,7 @@ if (config.isDevelopment) {
 }
 
 app.use(express.compress());
-app.use(express.favicon(config.dirs.pub + '/favicon.ico'));
+app.use(express.favicon(config.dirs.pub + '/img/favicon.ico'));
 app.use(express.cookieParser());
 app.use(express.cookieSession(config.session));
 app.use(express.json());
@@ -130,7 +130,5 @@ app.get('/combo/:version', [
     combo.combine({rootPath: config.dirs.pub}),
     combo.respond
 ]);
-
-app.add_url_rule('/favicon.ico', redirect_to=url_for('static', filename='favicon.ico'))
 
 module.exports = app;

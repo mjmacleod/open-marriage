@@ -21,30 +21,6 @@ body {
     padding: 6em 0 3em;
     position: relative;
 }
-.timeline:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 0.5em;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    margin-left: -0.25em;
-    background: #f2c63d;
-}
-.timeline:after {
-    content: 'h';
-    font-family: 'Pictos Custom';
-    font-size: 3em;
-    -webkit-font-smoothing: antialiased;
-    position: absolute;
-    z-index: -1;
-    top: -0.5em;
-    left: -0.0417em;
-    width: 100%;
-    text-align: center;
-    color: #f2c63d;
-}
 .timeline-events {
     margin-top: -2em;
     margin-bottom: -2em;

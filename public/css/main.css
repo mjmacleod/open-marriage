@@ -192,10 +192,6 @@ a.is-button-negative {
     margin: 0;
     padding: 0;
     list-style: none;
-    background-image: url('/img/mac_tartan.jpg');
-    background-repeat: repeat-x;
-    background-size: auto 100%;
-    color: #471F5F;
 }
 
 .nav-item {
@@ -234,6 +230,12 @@ a.is-button-negative {
     -moz-box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
     z-index: 10;
+
+    background-image: url('/img/mac_tartan.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    color: #471F5F;
+
 }
 .nav .nav-items {
     display: block;

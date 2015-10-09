@@ -36,27 +36,18 @@ body {
     display: table;
 }
 .timeline-events ol:after {
-    clear: both;
 }
 
 .event {
     margin: 2em 0;
     display: block;
-    padding: 0.5em;
+    padding: 0px;
     background: #fff;
     border-top: 1px solid #e5e5df;
     border-bottom: 1px solid #e5e5df;
     /*-webkit-box-shadow: 0 0 2px rgba(0,0,0, 0.10);
     -moz-box-shadow: 0 0 2px rgba(0,0,0, 0.10);
     box-shadow: 0 0 2px rgba(0,0,0, 0.10);*/
-}
-.event-leslie {
-    margin-right: 2em;
-    border-right: 1px solid #e5e5df;
-}
-.event-eric {
-    margin-left: 2em;
-    border-left: 1px solid #e5e5df;
 }
 .event-header {
     margin-top: 0;
@@ -125,9 +116,6 @@ body {
 /* 576px */
 @media screen and (min-width: 36em) {
     .event {
-        clear: both;
-        padding-left: 1em;
-        padding-right: 1em;
     }
     .event-header {
         font-size: 1.5em;

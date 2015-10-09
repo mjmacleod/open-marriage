@@ -30,14 +30,14 @@
         "bower"              : "1.2.x",
         "combohandler"       : "0.2.x",
         "csv"                : "0.3.x",
-        "db-migrate"         : "0.4.x",
+        "db-migrate"         : "0.6.x",
         "deep-freeze"        : "latest",
         "express"            : "3.2.x",
         "express-slash"      : "latest",
         "express-state"      : "latest",
         "express3-handlebars": "latest",
         "handlebars"         : "1.0.x",
-        "pg"                 : "1.1.x",
+        "pg"                 : "2.11.x",
         "request"            : "2.25.0"
     },
 

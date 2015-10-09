@@ -11,6 +11,7 @@ config = {
 
     database: env.DATABASE_URL,
     port    : env.PORT || 5000,
+    ssl     : true,
 
     session: {
         key   : 'MAC.session',

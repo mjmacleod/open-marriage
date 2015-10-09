@@ -1,5 +1,5 @@
 {
-  "name": "macleod.nom.za",
+  "name": "leslie-eric.us",
   "version": "1.8.0",
   "dependencies": {
     "async": {
@@ -548,9 +548,9 @@
       "resolved": "https://registry.npmjs.org/csv/-/csv-0.3.0.tgz"
     },
     "db-migrate": {
-      "version": "0.4.1",
-      "from": "https://registry.npmjs.org/db-migrate/-/db-migrate-0.4.1.tgz",
-      "resolved": "https://registry.npmjs.org/db-migrate/-/db-migrate-0.4.1.tgz",
+      "version": "0.6.3",
+      "from": "https://registry.npmjs.org/db-migrate/-/db-migrate-0.6.3.tgz",
+      "resolved": "https://registry.npmjs.org/db-migrate/-/db-migrate-0.6.3.tgz",
       "dependencies": {
         "async": {
           "version": "0.1.22",
@@ -697,14 +697,14 @@
       }
     },
     "pg": {
-      "version": "1.1.0",
-      "from": "https://registry.npmjs.org/pg/-/pg-1.1.0.tgz",
-      "resolved": "https://registry.npmjs.org/pg/-/pg-1.1.0.tgz",
+      "version": "2.11.1",
+      "from": "https://registry.npmjs.org/pg/-/pg-2.11.1.tgz",
+      "resolved": "https://registry.npmjs.org/pg/-/pg-2.11.1.tgz",
       "dependencies": {
         "generic-pool": {
-          "version": "2.0.2",
-          "from": "https://registry.npmjs.org/generic-pool/-/generic-pool-2.0.2.tgz",
-          "resolved": "https://registry.npmjs.org/generic-pool/-/generic-pool-2.0.2.tgz"
+          "version": "2.0.4",
+          "from": "https://registry.npmjs.org/generic-pool/-/generic-pool-2.0.4.tgz",
+          "resolved": "https://registry.npmjs.org/generic-pool/-/generic-pool-2.0.4.tgz"
         },
         "buffer-writer": {
           "version": "1.0.0",
@@ -717,9 +717,9 @@
               "resolved": "https://registry.npmjs.org/cloned/-/cloned-0.0.1.tgz",
               "dependencies": {
                 "rmdir": {
-                  "version": "1.0.0",
-                  "from": "https://registry.npmjs.org/rmdir/-/rmdir-1.0.0.tgz",
-                  "resolved": "https://registry.npmjs.org/rmdir/-/rmdir-1.0.0.tgz"
+                  "version": "1.0.4",
+                  "from": "https://registry.npmjs.org/rmdir/-/rmdir-1.0.4.tgz",
+                  "resolved": "https://registry.npmjs.org/rmdir/-/rmdir-1.0.4.tgz"
                 }
               }
             }
@@ -886,3 +886,4 @@
     }
   }
 }
+

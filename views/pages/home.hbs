@@ -2,6 +2,10 @@
 {{setDescription "Malcolm MacLeod & Corrie Gailey are getting married on April 30th, 2016 in Gordons Bay."}}
 {{addCSS "/css/home.css"}}
 
+<div class="wedding-more-info">
+Click here for more information
+</div>
+
 <div class="wedding-header">
  {{#event "Getting Married"
         time   = "April 30th, 2016"
@@ -10,16 +14,21 @@
     {{> event/photo}}
   {{/event}}
 </div>
+<div class="timeline_event">
+	<span class="timeline_event_date">April 30th, 2016</span>
+	<span class="timeline_event_desc">After xxx years the wedding will finally take place in ...<span>
+</div>
+<div class="timeline_event">
+	<span class="timeline_event_date">xxx</span>
+        <span class="timeline_event_desc">Engagement<span>
+</div>
+<div class="timeline_event">
+	<span class="timeline_event_date">yyy</span>
+        <span class="timeline_event_desc">First date<span>
+</div>
+<div class="timeline_event">
+        <span class="timeline_event_date">yyy</span>
+        <span class="timeline_event_desc">IRC<span>
+</div>
 
-<ol class="timeline l-grid">
-  {{#event "Getting Married"}}
-    {{> event/header}}
-    <p>
-        Corrie and Malcolm are getting married April 2016 in <strong>Gordons Bay</strong>.
-    </p>
-    <p class="button-wedding">
-        <a class="button" data-icon="i" href="/wedding/">See Wedding Details</a>
-    </p>
-    {{> event/time}}
-  {{/event}}
-</ol>
+

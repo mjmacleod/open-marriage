@@ -1,4 +1,4 @@
-YUI.add('le-wedding', function (Y) {
+YUI.add('MAC-wedding', function (Y) {
 
     var cal = Y.one('.cal'),
         graphic;
@@ -45,5 +45,5 @@ YUI.add('le-wedding', function (Y) {
     Y.one('win').on(['orientationchange', 'windowresize'], centerCal);
 
 }, '1.8.0', {
-    requires: ['le-main', 'le-maps', 'event-resize', 'graphics']
+    requires: ['MAC-main', 'MAC-maps', 'event-resize', 'graphics']
 });

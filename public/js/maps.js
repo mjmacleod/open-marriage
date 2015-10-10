@@ -1,4 +1,4 @@
-YUI.add('le-maps', function (Y) {
+YUI.add('MAC-maps', function (Y) {
 
     var isRetina = Y.config.win.devicePixelRatio >= 2;
 

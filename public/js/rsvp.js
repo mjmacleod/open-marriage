@@ -1,4 +1,4 @@
-YUI.add('le-rsvp', function (Y) {
+YUI.add('MAC-rsvp', function (Y) {
 
     // -- Y.Models Overrides ---------------------------------------------------
 
@@ -433,7 +433,7 @@ YUI.add('le-rsvp', function (Y) {
 
 }, '1.8.0', {
     requires: [
-        'le-main',
+        'MAC-main',
         'app-base',
         'app-content',
         'app-transitions',

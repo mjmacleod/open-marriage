@@ -1,4 +1,4 @@
-YUI.add('le-main', function (Y) {
+YUI.add('MAC-main', function (Y) {
 
     var nav = Y.one('.nav');
 

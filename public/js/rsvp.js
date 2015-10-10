@@ -53,7 +53,7 @@ YUI.add('MAC-rsvp', function (Y) {
             return meal;
         }
     }, {
-        MEALS: YUI.Env.LE.MEALS
+        MEALS: YUI.Env.MAC.MEALS
     });
 
 
@@ -334,7 +334,7 @@ YUI.add('MAC-rsvp', function (Y) {
         }
     });
 
-    app.invitation     = new Y.Invitation(YUI.Env.LE.invitation);
+    app.invitation     = new Y.Invitation(YUI.Env.MAC.invitation);
     app.initialContent = Y.one('#main > [data-view]');
 
     app.rsvp = function (isAttending) {

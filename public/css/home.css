@@ -50,7 +50,7 @@ html
 	display: inline-block;
 	width: 18%;
 	min-height: 400px; 
-	border: 2px solid #C8C800
+	border: 2px solid #C8C800;
 	padding: 10px;
 }
 
@@ -125,7 +125,7 @@ html
     position:absolute;
     display:block;
     content:"";
-    border:25px solid transparent;/*adjust size*/
+    border: 25px solid transparent;/*adjust size*/
 }
 /*Change four 'top' values below to rotate (top/right/bottom/left)*/
 .chevron:before{

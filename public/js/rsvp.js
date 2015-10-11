@@ -37,26 +37,6 @@ YUI.add('MAC-rsvp', function (Y) {
 
     // -- Models ---------------------------------------------------------------
 
-    Y.Guest = Y.Base.create('guest', Y.Model, [Y.ModelSync.REST], {
-        root: '/guests/',
-
-        mealLabel: function () {
-            var meal = '';
-
-            Y.Array.some(Y.Guest.MEALS, function (mealOption) {
-                if (mealOption.id === this.get('meal')) {
-                    meal = mealOption.label;
-                    return true;
-                }
-            }, this);
-
-            return meal;
-        }
-    }, {
-        MEALS: YUI.Env.MAC.MEALS
-    });
-
-
     Y.Guests = Y.Base.create('guests', Y.ModelList, [Y.ModelSync.REST], {
         model: Y.Guest,
 
@@ -123,7 +103,6 @@ YUI.add('MAC-rsvp', function (Y) {
     // -- Views ----------------------------------------------------------------
 
     Y.InvitationView = Y.Base.create('invitationView', Y.View, [], {
-        guestNeedsMealMsg: 'Choose which Main Course you would like.',
         invitationDoneMsg: 'Everything is set with your invitation response.',
 
         events: {
@@ -131,7 +110,6 @@ YUI.add('MAC-rsvp', function (Y) {
             '[data-done]'     : {click: 'done'},
             '[data-add-guest]': {click: 'addGuest'},
             '[data-attending]': {click: 'proposeUpdates'},
-            '[data-meal]'     : {click: 'proposeUpdates'},
             'input, textarea' : {blur: 'proposeUpdates'}
         },
 
@@ -185,21 +163,12 @@ YUI.add('MAC-rsvp', function (Y) {
             };
 
             container.all('[data-guest]').each(function (node) {
-                var meal = null;
-
-                node.all('[data-meal]').some(function (mealOption) {
-                    if (mealOption.get('checked')) {
-                        meal = mealOption.get('value');
-                        return true;
-                    }
-                });
 
                 invitation.guests.push({
                     id          : parseInt(node.getData('guest'), 10),
                     title       : node.one('[data-title]').get('value'),
                     name        : node.one('[data-name]').get('value'),
-                    is_attending: node.one('[data-attending]').get('checked'),
-                    meal        : meal
+                    is_attending: node.one('[data-attending]').get('checked')
                 });
             });
 
@@ -211,15 +180,9 @@ YUI.add('MAC-rsvp', function (Y) {
 
         syncUI: function () {
             var container  = this.get('container'),
-                invitation = this.get('invitation'),
-                guestsNeedsMeal;
+                invitation = this.get('invitation');
 
-            guestsNeedsMeal = invitation.get('guests').some(function (guest) {
-                return guest.get('is_attending') && !guest.get('meal');
-            });
-
-            container.one('.inv-status').set('text', guestsNeedsMeal ?
-                this.guestNeedsMealMsg : this.invitationDoneMsg);
+            container.one('.inv-status').set('text', this.invitationDoneMsg);
 
             container.all('address, [data-address]')
                 .setHTML(Y.Escape.html(invitation.get('address')));
@@ -240,10 +203,6 @@ YUI.add('MAC-rsvp', function (Y) {
 
                 node.one('[data-attending]').set('checked', isAttending);
 
-                node.one('.guest-meal span').set('text', guest.mealLabel());
-                node.all('[data-meal]').set('checked', false)
-                    .filter('[value=' + guest.get('meal') + ']')
-                        .set('checked', true);
             }, this);
         }
     });

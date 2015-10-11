@@ -8,6 +8,13 @@ html
 	background-color: white;
 }
 
+.scroll-for-more-info a
+{
+    color: white;
+    font-size: 0.6em;
+    display:inline;
+}
+
 .wedding-header
 {
     width: 100%;

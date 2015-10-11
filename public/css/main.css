@@ -180,12 +180,12 @@ a.is-button-negative {
 .brand a {
     display: block;
     padding: 0 0.4em;
-    color: #b0afa6;
+    color: #9B7CB2;
     text-decoration: none;
 }
 .brand a:hover,
 .brand a:active {
-    color: #216eb5;
+    color: #9B7CB2;
 }
 
 .nav-list {
@@ -234,8 +234,8 @@ a.is-button-negative {
     background-image: url('/img/mac_tartan.jpg');
     background-repeat: repeat-x;
     background-size: auto 100%;
-    color: #471F5F;
-
+    color: #9B7CB2;
+    border-bottom: 4px solid #816794;
 }
 .nav .nav-items {
     display: block;

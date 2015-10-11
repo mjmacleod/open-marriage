@@ -10,7 +10,7 @@ exports.config  = {
     root   : YUI_VERSION + '/',
 
     modules: {
-        'mapbox-css': 'https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js',
+        'mapbox-css': 'https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css',
 
         'mapbox': {
             fullpath: 'https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js',

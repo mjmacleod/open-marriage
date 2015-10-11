@@ -27,6 +27,36 @@ html
     display: block;
 }
 
+.wedding-timeline
+{
+	display: block;
+	width: 95%;
+	border: 1px solid black;
+}
+
+.wedding-timeline-item
+{
+	width:25%;
+}
+
+.wedding-timeline-event
+{
+	display: inline-block;
+	font-weight: bold;
+}
+
+.wedding-timeline-date
+{
+	display: inline-block;
+        font-style: italic;
+}
+
+.wedding-timeline-description
+{
+	display: inline-block;
+}
+
+
 .wedding-invitation-image
 {
     display:block;

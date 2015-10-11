@@ -3,6 +3,7 @@ YUI.add('MAC-maps', function (Y) {
     var isRetina = Y.config.win.devicePixelRatio >= 2;
 
     Y.all('[data-map]').each(function (mapNode) {
+        mapbox.accessToken = process.env.MAPBOX_ACCESS;
         mapbox.load(mapNode.getData('map'), function (data) {
             var map = mapbox.map(mapNode.getDOMNode(), [
                 data.layer,

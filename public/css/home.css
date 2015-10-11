@@ -38,7 +38,8 @@ html
 .wedding-timeline-icon
 {
     float: right;
-    display: inline-block;
+    display: block;
+    margin-left: 10px;
 }
 
 .wedding-timeline
@@ -83,7 +84,6 @@ html
 
 .wedding-timeline-description
 {
-	display: inline-block;
 	color: #084B16;
 }
 

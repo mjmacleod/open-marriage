@@ -3,24 +3,10 @@ YUI.add('MAC-maps', function (Y) {
     var isRetina = Y.config.win.devicePixelRatio >= 2;
 
     Y.all('[data-map]').each(function (mapNode) {
-        mapbox.accessToken = process.env.MAPBOX_ACCESS;
-        mapbox.load(mapNode.getData('map'), function (data) {
-            var map = mapbox.map(mapNode.getDOMNode(), [
-                data.layer,
-                data.markers
-            ], null, [
-                MM.DoubleClickHandler(),
-                MM.DragHandler()
-            ]);
-
-            if (isRetina) {
-                map.tileSize = {x: 128, y: 128};
-            }
-
-            map.ui.zoomer.add();
-            map.centerzoom(data.center, data.zoom);
-        });
-    });
+         L.mapbox.accessToken = 'pk.eyJ1IjoibW1hY2xlb2QiLCJhIjoiY2lmbWlkamV0MDE2cHU2bHlyc2p3Y3pwbiJ9.YjHJqXvs_YB9bSQpJQWtrw';
+         var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([40, -74.50], 9);
+    }
 
 }, '1.8.0', {
     requires: ['node-base', 'mapbox']

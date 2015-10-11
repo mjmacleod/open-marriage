@@ -44,6 +44,8 @@ html
 	border: 1px solid black;
 	padding: 5px;
 	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .wedding-timeline-event

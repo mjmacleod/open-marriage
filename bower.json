@@ -4,7 +4,6 @@
     "private": true,
 
     "dependencies": {
-        "hide-address-bar": "git://github.com/scottjehl/Hide-Address-Bar.git",
         "normalize-css"   : "~2.1.2"
     }
 }

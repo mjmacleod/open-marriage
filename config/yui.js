@@ -26,17 +26,12 @@ exports.config  = {
             root     : '/',
 
             modules: {
-                'hide-address-bar': {
-                    path: 'vendor/hide-address-bar/hide-address-bar.js'
-                },
-
                 'MAC-home': {
                     use: ['MAC-main', 'MAC-maps']
                 },
 
                 'MAC-main': {
                     path    : 'js/main.js',
-                    requires: ['node-base', 'hide-address-bar']
                 },
 
                 'MAC-maps': {

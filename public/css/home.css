@@ -6,16 +6,18 @@ body {
 {
     width: 100%;
     height: 80%;
-    top: 0;
+    top: 60px;
     left: 0;
     position: fixed !important;
     background: #fff;
     z-index: 1;
+    display: block;
 }
 
 .wedding-invitation-image
 {
-    max-height: 90%;
+    display:block;
+    max-height: 95%;
     max-width:90%;
     margin: auto;
 }

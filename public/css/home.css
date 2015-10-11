@@ -4,9 +4,25 @@ body {
 
 .wedding-header
 {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+    background: #fff;
+}
+
+.bottom-wrapper
+{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    min-height: 38%;
+    z-index: 2;
+    padding-bottom: 2em;
+    -webkit-box-shadow: 0 -1px 1px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0 -1px 1px rgba(0,0,0, 0.10);
+    box-shadow: 0 -1px 1px rgba(0,0,0, 0.10);
 }
 
 .ann-sep {

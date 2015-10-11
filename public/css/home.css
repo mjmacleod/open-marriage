@@ -57,17 +57,20 @@ html
 {
 	display: inline-block;
 	font-weight: bold;
+	color: #9B7CB2;
 }
 
 .wedding-timeline-date
 {
 	display: inline-block;
         font-style: italic;
+	color: #9B7CB2;
 }
 
 .wedding-timeline-description
 {
 	display: inline-block;
+	color: #084B16;
 }
 
 

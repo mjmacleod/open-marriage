@@ -13,6 +13,13 @@ body {
     z-index: 1;
 }
 
+.wedding-invitation-image
+{
+    max-height: 90%;
+    max-width:90%;
+    margin: auto;
+}
+
 .bottom-wrapper
 {
     position: absolute;

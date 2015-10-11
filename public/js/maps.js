@@ -9,7 +9,7 @@ YUI.add('MAC-maps', function (Y) {
          featureLayer.loadID("mmacleod.nm6dohm7");
          new L.Control.Zoom({position:'bottomright'}).addTo(map);
          featureLayer.on('ready', function() {map.fitBounds(featureLayer.getBounds());});
-         map.eventHandlers[3].remove();
+         map.scrollWheelZoom.disable();
     })
 
 }, '1.8.0', {

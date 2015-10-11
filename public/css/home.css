@@ -45,6 +45,28 @@ html
     z-index: 10000;
 }
 
+.Chevron{
+    position:relative;
+    display:block;
+    height:50px;/*height should be double border*/
+}
+.Chevron:before,
+.Chevron:after{
+    position:absolute;
+    display:block;
+    content:"";
+    border:25px solid transparent;/*adjust size*/
+}
+/*Change four 'top' values below to rotate (top/right/bottom/left)*/
+.Chevron:before{
+    top:0;
+    border-top-color:#b00;/*Chevron Color*/
+}
+.Chevron:after{
+    top:-10px;/*adjust thickness*/
+    border-top-color:#fff;/*Match background colour*/
+}
+
 .ann-sep {
     font-size: 2.5em;
     color: #f2c63d;

@@ -20,6 +20,8 @@ body {
     max-height: 95%;
     max-width:90%;
     margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .bottom-wrapper

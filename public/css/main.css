@@ -237,6 +237,7 @@ a.is-button-negative {
     background-size: auto 100%;
     color: #9B7CB2;
     border-bottom: 4px solid #816794;
+    max-height: 8%;
 }
 .nav .nav-items {
     display: block;

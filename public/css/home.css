@@ -47,7 +47,7 @@ html
 
 .chevron{
     position:relative;
-    display:block;
+    display:inline-block;
     height:50px;/*height should be double border*/
 }
 .chevron:before,
@@ -60,7 +60,7 @@ html
 /*Change four 'top' values below to rotate (top/right/bottom/left)*/
 .chevron:before{
     top:0;
-    border-top-color:#b00;/*Chevron Color*/
+    border-top-color:#9B7CB2;/*Chevron Color*/
 }
 .chevron:after{
     top:-10px;/*adjust thickness*/

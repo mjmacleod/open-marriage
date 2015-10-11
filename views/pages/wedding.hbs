@@ -6,46 +6,36 @@
 {{addCSS "/css/wedding.css"}}
 
 <div id="map" data-map="mmacleod.nm6dohm7"></div>
-
 <div class="l-wrap">
     <a class="scroll-for-more-info" href="#bottom">Scroll for more information</a><span class="chevron"></span>
-    <h1 class="ann">
-        <span class="ann-secondary">Wedding</span>
-        <span class="ann-primary">October 5, 2013</span>
-        <span class="ann-secondary">Easton, MD</span>
+    <h1>
+        Wedding, April 30, 2016
     </h1>
-
     <ol class="cal l-contain l-grid">
-        {{#day "Friday 4"}}
-            {{addDayEvent "evening-before"
-                start = "8pm"
-                end   = "1am"
-                desc  = "Drinks @ Washington St. Pub & Oyster Bar"}}
-
+	{{#day "Thursday 28 April"}}
             {{> day/header}}
             {{> day/events}}
         {{/day}}
-
-        {{#day "Saturday 5" primary=true}}
+        {{#day "Friday 29 April"}}
+            {{> day/header}}
+            {{> day/events}}
+        {{/day}}
+        {{#day "Saturday 30 April" primary=true}}
             {{addDayEvent "ceremony"
-                start = "4:30pm"
+                start = "10:00am"
                 desc  = "Wedding Ceremony"}}
-
-            {{addDayEvent "ceremony"
-                start = "5pm"
-                end   = "10pm"
-                desc  = "Reception"}}
-
+            {{addDayEvent "reception"
+                start = "1pm"
+                end   = "12pm"
+                desc  = "Reception"}
             {{> day/header}}
             {{> day/events}}
         {{/day}}
-
-        {{#day "Sunday 6"}}
-            {{addDayEvent "brunch"
-                start = "11am"
-                end   = "1pm"
-                desc  = "Informal Brunch Buffet"}}
-
+        {{#day "Sunday 1 May"}}
+            {{> day/header}}
+            {{> day/events}}
+        {{/day}}
+        {{#day "Monday 2 May"}}
             {{> day/header}}
             {{> day/events}}
         {{/day}}
@@ -63,65 +53,45 @@
     </div>
 
     <div class="details l-contain">
-        <h2 id="evening-before" class="anchored-header">
-            Drinks the Evening Before
+        <h2 id="ceremony" class="anchored-header">
+            Ceremony
         </h2>
-
         <div class="details-group l-grid">
             <div class="l-grid-u">
                 <p class="details-content">
-                    If you arrive in Easton, MD by <b>Friday, October 4th</b> we would love for you to meet up with us as at:
+                    The wedding ceremony will begin, on <b>Saturday at 10:00</b>. The ceremony will be held at the Harold Porter National Botanical Gardens in Betty's Bay:
                 </p>
             </div>
-
             <div class="l-grid-u">
                 <address class="details-content">
-                    <b><a href="http://washingtonstreetpub.com/">Washington Street Pub &amp; Oyster Bar</a></b><br>
-                    <a href="http://maps.apple.com/?q=20+N+Washington+St.+Easton,+MD+21601">
-                        20 N Washington St.<br>
-                        Easton, MD 21601
+                    <a href="https://www.google.com/maps/place/Harold+Porter+National+Botanical+Garden/@-34.3508047,18.9246298,17z/data=!3m1!4b1!4m2!3m1!1s0x1dcdd6eab005543b:0x2f22652e331d15cb">
+                        <b>Harold Porter National Botanical Gardens</b><br>
+                        Broadwith Road<br>
+                        Betty's Bay
                     </a>
                 </address>
             </div>
         </div>
-
-        <p>
-            The second floor balcony will be reserved for our group starting at <b>8pm</b>. Feel free to come early and enjoy a meal or later just for drinks. This is an informal gathering, and the bar accepts both cash and credit cards.
-        </p>
-
 
         <h2 id="ceremony" class="anchored-header">
-            Ceremony &amp; Reception
+            Reception
         </h2>
-
         <div class="details-group l-grid">
             <div class="l-grid-u">
                 <p class="details-content">
-                    The wedding ceremony will begin, <em>promptly</em>, on <b>Saturday at 4:30pm</b>. The ceremony and reception will be held at the home of Steve and Minda Goldberg:
+                    The reception will begin, on <b>Saturday at 13:00</b>. The reception will be held at The Barn in Gordon's Bay:
                 </p>
             </div>
-
             <div class="l-grid-u">
                 <address class="details-content">
-                    <a href="http://maps.apple.com/?q=8290+Ingleton+Circle+Easton,+MD+21601">
-                        <b>Goldberg Residence</b><br>
-                        8290 Ingleton Circle<br>
-                        Easton, MD 21601
+                    <a href="https://www.google.com/maps/place/The+Barn/@-34.1472192,18.8897159,17z/data=!4m6!1m3!3m2!1s0x1dcdcb901e516c23:0xb1c463c59ab6114c!2sJo's+Tours!3m1!1s0x0000000000000000:0x58b1d8f2379a77aa">
+                        <b>The Barn</b><br>
+                        Sir Lowry's Pass Road<br>
+                        Gordon's Bay
                     </a>
                 </address>
             </div>
         </div>
-
-        <h2 id="brunch" class="anchored-header">
-            Informal Brunch Buffet
-        </h2>
-
-        <p>
-            An informal brunch buffet will be served at the home of Steve and Minda Goldberg (the same location as the <a href="#ceremony">ceremony</a>) on <b>Sunday morning</b>. Stop by anytime between 11am - 1pm, before you head out of town.
-        </p>
-        <p>
-            We would appreciate if you would RSVP, <em>regrets only</em>, <a href="/rsvp/brunch/">if you <em>won't</em> be attending the brunch</a>.
-        </p>
     </div>
-    <span id="bottom"></span>
+    <span id="bottom">&nbsp;</span>
 </div>

@@ -32,7 +32,7 @@ function pub(req, res, next) {
 function login2(req, res, next) {
     var code = req.body.code.trim();
 
-    return res.redirect('/rsvp/'+code+'/');
+    return res.redirect('/wedding/');
 }
 
 

@@ -345,7 +345,7 @@ a.is-button-negative {
 }
 
 /* 568px */
-@media screen and (min-width: 42em) and (min-height: 500px) {
+@media screen and (min-width: 45em) and (min-height: 500px) {
     .nav .nav-items {
         display: inline-block;
         max-height: none;

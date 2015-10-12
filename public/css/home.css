@@ -147,7 +147,7 @@ html
 }
 .chevron:after{
     top:-10px;/*adjust thickness*/
-    top:-1vh;/*adjust thickness*/
+    top:-0.5vh;/*adjust thickness*/
     border-top-color:#fff;/*Match background colour*/
 }
 

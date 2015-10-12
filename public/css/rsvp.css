@@ -276,7 +276,4 @@ button
 
 /* 770px */
 @media screen and (min-width: 48.125em) {
-    .inv {
-        border: 1px solid #e5e5df;
-    }
 }

@@ -31,7 +31,7 @@ config = {
     },
 
     email: {
-        from: 'Corrie & Malcolm <rsvp@macleod.nom.za>'
+        from: 'Corrie & Malcolm <wedding@macleod.nom.za>'
     },
 
     dirs: {

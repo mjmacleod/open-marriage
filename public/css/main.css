@@ -277,7 +277,7 @@ a.is-button-negative {
     line-height: 0.5;
 }
 
-#menu
+.nav-toggle a
 {
 	color: white !important;
 }

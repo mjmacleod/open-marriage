@@ -66,12 +66,6 @@ button
     width: 100%;
 }
 
-.inv {
-    background: #fff;
-    border: 1px solid #e5e5df;
-    border-left: 0;
-    border-right: 0;
-}
 .inv-header {
     margin-bottom: 0;
     padding-bottom: 1em;

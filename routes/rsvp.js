@@ -9,7 +9,7 @@ var async = require('async'),
 exports.pub    = pub;
 exports.resend = resend;
 exports.login  = login;
-exports.login2  = login;
+exports.login2  = login2;
 exports.edit   = edit;
 exports.brunch = brunch;
 

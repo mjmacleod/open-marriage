@@ -30,9 +30,32 @@ function pub(req, res, next) {
 }
 
 function login2(req, res, next) {
-    var code = req.body.code.trim();
+    var invitation_key = req.body.invitation_key.trim();
 
-    return res.redirect('/wedding/');
+    // Prevent RSVP logins after the wedding has happened, and _always_ redirect
+    // to "/rsvp/".
+    if (req.afterWedding) {
+        delete req.session.invitation;
+        return res.redirect('/rsvp/');
+    }
+
+    try {
+        invitationId = invs.decipherId(invitation_key);
+    } catch (ex) {
+        delete req.session.invitation;
+        return next(error(401));
+    }
+
+    invs.loadInvitation(invitationId, function (err, invitation) {
+        if (err || !invitation) {
+            delete req.session.invitation;
+            return next(err);
+        }
+
+        // Set the invitation on the session and redirect up one path level.
+        req.session.invitation = invitationId;
+        res.redirect(path.resolve(req.path, '..') + '/');
+    });
 }
 
 

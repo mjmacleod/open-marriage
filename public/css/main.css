@@ -140,7 +140,6 @@ button:before,
     font-weight: 400;
     line-height: 1.5;
     width: 1em;
-    padding: 0.125em 0.25em 0;
     background: #75AB81;
     text-align: center;
 }
@@ -379,7 +378,6 @@ a.is-button-negative {
 
     button,
     .button {
-        padding: 0 1em 0 4em;
     }
 
     .brand a {

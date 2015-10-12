@@ -196,7 +196,7 @@ a.is-button-negative {
 }
 
 .nav-item {
-    margin: 0 1em 0 0;
+    margin: 0;
     text-transform: uppercase;
 }
 .nav-item:first-child {

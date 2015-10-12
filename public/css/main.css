@@ -168,10 +168,8 @@ a.is-button-negative {
 }
 
 .brand {
-    font-size: 1.25em;
     font-family: "futura-pt", sans-serif;
     font-weight: 300;
-    line-height: 2.4;
 }
 .brand-sep {
     font-family: "jubilat", serif;
@@ -385,10 +383,6 @@ a.is-button-negative {
         padding: 0 1em 0 4em;
     }
 
-    .brand {
-        font-size: 1.5em;
-        line-height: 2;
-    }
     .brand a {
         padding: 0 0.6667em;
     }
@@ -409,9 +403,7 @@ a.is-button-negative {
         padding-top: 4em;
     }
 
-    .brand {
-        line-height: 2.6667;
-    }
+    
 
     .nav .nav-item a {
         padding: 1.3889em 0.8888em 1.1667em;

@@ -114,6 +114,7 @@ display:none;
     content: none;
 }
 .guest-salutation:after {
+color: #4F6D81;
     content: "n";
     display: inline-block;
     *display: inline;
@@ -125,7 +126,7 @@ display:none;
 }
 .is-guest-attending .guest-salutation:after {
     content: "y";
-    color: #75AB81;
+    color: #4F6D81;
 }
 .guest-attending {
     font-weight: 700;

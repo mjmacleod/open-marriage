@@ -1,22 +1,22 @@
 body, html
 {
-	background-color: #BDB5C4 ~important;
+	background-color: #BDB5C4 !important;
 }
 
 .ann-secondary, .ann-primary
 {
-	color: #4F6D81;
+	color: #4F6D81 !important;
 }
 
 .button
 {
-    background-color: #4F6D81;
-    color: black;
+    background-color: #4F6D81 !important;
+    color: black !important;
 }
 
 .is-button-negative
 {
-    background-color: #8A4846;
+    background-color: #8A4846 !important;
 }
 
 .ann {

@@ -170,6 +170,7 @@ a.is-button-negative {
 .brand {
     font-family: "futura-pt", sans-serif;
     font-weight: 300;
+    font-size: 3vh;
 }
 .brand-sep {
     font-family: "jubilat", serif;
@@ -196,6 +197,7 @@ a.is-button-negative {
 .nav-item {
     margin: 0;
     text-transform: uppercase;
+    font-size: 2vh;
 }
 .nav-item:first-child {
     margin-left: 0;
@@ -237,6 +239,8 @@ a.is-button-negative {
     border-bottom: 4px solid #816794;
     height: 8%;
     height: 6vh;
+    line-height: 8%;
+    line-height: 6vh;
     border-bottom: 0.7vh solid #816794;
 }
 .nav .nav-items {

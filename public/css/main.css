@@ -359,10 +359,7 @@ a.is-button-negative {
     .nav .nav-toggle {
         display: none;
     }
-}
 
-/* 576px */
-@media screen and (min-width: 36em) and (min-height: 500px) {
     h1 { font-size: 2em; }
     h2 { font-size: 1.5em; }
     h3 { font-size: 1.25em; }

@@ -10,7 +10,7 @@ body, html
 
 .inv
 {
-	background-color: #816794;
+	background-color: #8B7E94;
 	padding:10px;
 	border: 0px;
 }
@@ -88,27 +88,12 @@ button
     margin-left: -0.5em;
     margin-right: -0.5em;
 }
-.inv-address,
-.inv-address-val,
+.inv-address,.inv-address-val
+{
+display:none;
+}
 .guest {
     width: 100%;
-}
-.inv-address,
-.inv-address-val {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-}
-.inv-address address {
-    white-space: pre;
-    margin-top: 0;
-}
-.inv-address-val label {
-    font-weight: 700;
-}
-.inv-address-val textarea {
-    width: 100%;
-    margin: 0 auto 1em;
 }
 
 .guest {
@@ -173,7 +158,6 @@ button
 .guest-name-val,
 .guest-attending-val,
 .guest-meal-val,
-.inv-address-val,
 .inv-done {
     display: none;
 }
@@ -199,12 +183,10 @@ button
     *display: inline;
     zoom: 1;
 }
-.is-inv-editing .inv-address-val,
 .is-inv-editing .guest-attending-val,
 .is-inv-editing .guest-meal-val {
     display: block;
 }
-.is-inv-editing .inv-address,
 .is-inv-editing .guest-salutation,
 .is-inv-editing .guest-attending,
 .is-inv-editing .guest-meal,
@@ -248,16 +230,10 @@ button
         margin-right: -1em;
     }
 
-    .inv-address,
-    .inv-address-val,
     .guest {
         width: 50%;
     }
 
-    .inv-address,
-    .inv-address-val {
-        text-align: center;
-    }
 }
 
 /* 768px */

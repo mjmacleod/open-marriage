@@ -97,6 +97,8 @@ html
     height: 96%;
     max-width:95%;
     margin: auto;
+    margin-top:5px;
+    margin-top:2vh;
 }
 
 .bottom-wrapper

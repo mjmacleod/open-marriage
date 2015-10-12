@@ -12,7 +12,13 @@
         Wedding, April 30, 2016
     </h1>
     <ol class="cal l-contain l-grid">
-	{{#day "Thursday 28 April"}}
+        {{#day "Wednesday 27 April"}}
+                {{addDayEvent "Freedom Day"
+                desc  = "Freedom Day"}}
+            {{> day/header}}
+            {{> day/events}}
+        {{/day}}
+        {{#day "Thursday 28 April"}}
             {{> day/header}}
             {{> day/events}}
         {{/day}}

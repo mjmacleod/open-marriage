@@ -9,6 +9,7 @@ var async = require('async'),
 exports.pub    = pub;
 exports.resend = resend;
 exports.login  = login;
+exports.login2  = login;
 exports.edit   = edit;
 exports.brunch = brunch;
 
@@ -27,6 +28,15 @@ function pub(req, res, next) {
 
     res.render('rsvp/public');
 }
+
+function login2(req, res, next) {
+    var code = req.body.code.trim();
+
+    if (req.afterWedding) {
+        return res.redirect('/rsvp/'+code+'/');
+    }
+}
+
 
 function resend(req, res, next) {
     var email = req.body.email.trim();

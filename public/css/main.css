@@ -277,6 +277,11 @@ a.is-button-negative {
     line-height: 0.5;
 }
 
+#menu
+{
+	color: white !important;
+}
+
 .subnav {
     margin: 1em 0;
 }

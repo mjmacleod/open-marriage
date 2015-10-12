@@ -7,15 +7,15 @@
     color: #f2c63d;
 }
 
-.resend-email,
+.resend-code, .resend-email,
 .resend-submit {
     width: 100%;
     text-align: center;
 }
-.resend-email {
+.resend-code, .resend-email {
     margin-bottom: 1em;
 }
-.resend-email input {
+.resend-email input, .resend-code input {
     font-size: 1.5em;
     width: 100%;
 }
@@ -201,7 +201,7 @@
 
 /* 576px */
 @media screen and (min-width: 36em) {
-    .resend-email input {
+    .resend-email input, .resend-code input {
         width: 75%;
     }
 
@@ -239,7 +239,7 @@
 
 /* 768px */
 @media screen and (min-width: 48em) {
-    .resend-email input {
+    .resend-email input, .resend-code input {
         width: 62%;
     }
 

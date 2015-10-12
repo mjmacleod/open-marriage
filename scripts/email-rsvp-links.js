@@ -41,14 +41,11 @@ function sendEmail(invitation, callback) {
     }
     else
     {
-    email.sendRsvpLink(invitation, function (err, res, body) {
-            if (err)
-            {
-                console.log(err);
-            } else {
-                console.log('Sent RSVP link to Invitation: ' + invitation.id + ' recipients.');
-            }
+        email.sendRsvpLink(invitation, "", function (err) {
+        if (err)
+            {console.log(err); }
+        else
+            {console.log('Sent RSVP link to Invitation: ' + invitation.id + ' recipients.'); };
         callback(null);
-    });
-   } 
+    }
 }

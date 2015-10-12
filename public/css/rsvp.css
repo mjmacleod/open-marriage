@@ -8,6 +8,13 @@ body, html
 	color: #4F6D81 !important;
 }
 
+.inv
+{
+	background-color: #816794;
+	padding:10px;
+	border: 0px;
+}
+
 button
 {
     background-color: #4F6D81 !important;
@@ -17,6 +24,7 @@ button
 .is-button-negative
 {
     background-color: #8A4846 !important;
+    color: black !important;
 }
 
 .ann {

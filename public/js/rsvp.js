@@ -37,6 +37,12 @@ YUI.add('MAC-rsvp', function (Y) {
 
     // -- Models ---------------------------------------------------------------
 
+    Y.Guest = Y.Base.create('guest', Y.Model, [Y.ModelSync.REST], {
+        root: '/guests/',
+
+    });
+
+
     Y.Guests = Y.Base.create('guests', Y.ModelList, [Y.ModelSync.REST], {
         model: Y.Guest,
 
@@ -168,7 +174,7 @@ YUI.add('MAC-rsvp', function (Y) {
                     id          : parseInt(node.getData('guest'), 10),
                     title       : node.one('[data-title]').get('value'),
                     name        : node.one('[data-name]').get('value'),
-                    is_attending: node.one('[data-attending]').get('checked')
+                    is_attending: node.one('[data-attending]').get('checked'),
                 });
             });
 
@@ -181,6 +187,7 @@ YUI.add('MAC-rsvp', function (Y) {
         syncUI: function () {
             var container  = this.get('container'),
                 invitation = this.get('invitation');
+
 
             container.one('.inv-status').set('text', this.invitationDoneMsg);
 

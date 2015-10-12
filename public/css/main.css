@@ -345,7 +345,7 @@ a.is-button-negative {
 }
 
 /* 568px */
-@media screen and (min-width: 35.5em) and (min-height 300px) {
+@media screen and (min-width: 35.5em) and (min-height: 300px) {
     .nav .nav-items {
         display: inline-block;
         max-height: none;
@@ -362,7 +362,7 @@ a.is-button-negative {
 }
 
 /* 576px */
-@media screen and (min-width: 36em) and (min-height 300px) {
+@media screen and (min-width: 36em) and (min-height: 300px) {
     h1 { font-size: 2em; }
     h2 { font-size: 1.5em; }
     h3 { font-size: 1.25em; }
@@ -401,7 +401,7 @@ a.is-button-negative {
 }
 
 /* 768px */
-@media screen and (min-width: 48em)  and (min-height 400px) {
+@media screen and (min-width: 48em)  and (min-height: 400px) {
     body {
         padding-top: 4em;
     }

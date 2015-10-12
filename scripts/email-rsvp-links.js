@@ -37,17 +37,18 @@ function sendEmail(invitation, callback) {
     if (invitation.emailcount>0)
     {
         console.log('Skipped [already emailed] Invitation: ' + invitation.id + ' recipients.');
+	callback(null);
     }
-
+    else
+    {
     email.sendRsvpLink(invitation, function (err, res, body) {
             if (err)
             {
                 console.log(err);
             } else {
                 console.log('Sent RSVP link to Invitation: ' + invitation.id + ' recipients.');
-                invitation.emailcount = invitation.emailcount+1;
-                invitation.updateInvitation(invitation.id, "emailcount="+invitation.emailcount+1, function(){});
             }
         callback(null);
     });
+   } 
 }

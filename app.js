@@ -111,7 +111,7 @@ app.get('/registry/', routes.render('registry'));
 
 app.get( '/rsvp/',                       routes.rsvp.pub, routes.rsvp.edit);
 app.post('/rsvp/',                       routes.rsvp.resend);
-app.post('/rsvp/login2',                       routes.rsvp.pub, routes.rsvp.login2);
+app.post('/rsvp/login2',                 routes.rsvp.login2);
 app.get( '/rsvp/:invitation_key',        routes.rsvp.login);
 
 app.all( '/invitations/:invitation/*',       middleware.auth.ensureInvitation);

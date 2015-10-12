@@ -237,7 +237,7 @@ a.is-button-negative {
     border-bottom: 4px solid #816794;
     height: 8%;
     height: 6vh;
-    border-bottom: 1vh solid #816794;
+    border-bottom: 0.7vh solid #816794;
 }
 .nav .nav-items {
     display: block;

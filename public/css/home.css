@@ -27,9 +27,9 @@ html
 {
     width: 100%;
     height: 82%;
-    height: 87vh;
+    height: 89vh;
     top: 8%;
-    top: 8vh;
+    top: 6vh;
     left: 0;
     position: fixed !important;
     background: #fff;
@@ -127,7 +127,9 @@ html
     position:relative;
     display:inline-block;
     padding-left: 20px;
+    padding-left: 4vw;
     height:50px;/*height should be double border*/
+    height:6vh;
 }
 .chevron:before,
 .chevron:after{
@@ -135,6 +137,7 @@ html
     display:block;
     content:"";
     border: 25px solid transparent;/*adjust size*/
+    border: 3vh solid transparent;/*adjust size*/
 }
 /*Change four 'top' values below to rotate (top/right/bottom/left)*/
 .chevron:before{
@@ -143,6 +146,7 @@ html
 }
 .chevron:after{
     top:-10px;/*adjust thickness*/
+    top:-1.5vh;/*adjust thickness*/
     border-top-color:#fff;/*Match background colour*/
 }
 

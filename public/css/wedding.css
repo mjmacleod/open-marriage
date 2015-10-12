@@ -94,13 +94,13 @@ h1
     border-right: 0;
 }
 .cal-day {
+    border: 1px solid #e5e5df;
     width: 80%;
     white-space: normal;
     position: relative;
     padding-bottom: 0.5em;
 }
 .cal-day-primary {
-    border: 1px solid #e5e5df;
     border-top: 0;
     border-bottom: 0;
 }

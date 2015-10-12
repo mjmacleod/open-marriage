@@ -55,14 +55,7 @@ textarea:focus {
     border: 1px solid #8BBCEA;
 }
 
-[data-icon]:before,
-[data-icon]:after {
-    font-family: 'Pictos Custom';
-    -webkit-font-smoothing: antialiased;
-}
-[data-icon]:before {
-    content: attr(data-icon);
-}
+
 
 .l-grid,
 .l-grid-1-2 {
@@ -278,7 +271,6 @@ a.is-button-negative {
     content: none;
 }
 .nav .nav-toggle a:after {
-    content: attr(data-icon);
     text-transform: none;
     vertical-align: middle;
     margin-left: 0.25em;
